@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		B17B23FC232BBDF400661E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B23FB232BBDF400661E92 /* AppDelegate.swift */; };
 		B17B23FE232BBDF400661E92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B23FD232BBDF400661E92 /* SceneDelegate.swift */; };
-		B17B2400232BBDF400661E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B23FF232BBDF400661E92 /* ViewController.swift */; };
-		B17B2403232BBDF400661E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17B2401232BBDF400661E92 /* Main.storyboard */; };
 		B17B2405232BBDF500661E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17B2404232BBDF500661E92 /* Assets.xcassets */; };
 		B17B2408232BBDF500661E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17B2406232BBDF500661E92 /* LaunchScreen.storyboard */; };
 		B17B2413232BBDF500661E92 /* AppleSignInExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B2412232BBDF500661E92 /* AppleSignInExampleTests.swift */; };
 		B17B241E232BBDF500661E92 /* AppleSignInExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B241D232BBDF500661E92 /* AppleSignInExampleUITests.swift */; };
+		B17B242C232BBE6500661E92 /* AppleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B242B232BBE6500661E92 /* AppleSignInViewController.swift */; };
+		B17B242E232BBF0800661E92 /* AppleSigninProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B242D232BBF0800661E92 /* AppleSigninProtocol.swift */; };
+		B17B2431232BBF5200661E92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B2430232BBF5200661E92 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		B17B23F8232BBDF400661E92 /* AppleSignInExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSignInExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17B23FB232BBDF400661E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B17B23FD232BBDF400661E92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B17B23FF232BBDF400661E92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B17B2402232BBDF400661E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B17B2404232BBDF500661E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B17B2407232BBDF500661E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B17B2409232BBDF500661E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,10 @@
 		B17B2419232BBDF500661E92 /* AppleSignInExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleSignInExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17B241D232BBDF500661E92 /* AppleSignInExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInExampleUITests.swift; sourceTree = "<group>"; };
 		B17B241F232BBDF500661E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17B242B232BBE6500661E92 /* AppleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInViewController.swift; sourceTree = "<group>"; };
+		B17B242D232BBF0800661E92 /* AppleSigninProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSigninProtocol.swift; sourceTree = "<group>"; };
+		B17B2430232BBF5200661E92 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B17B2432232BBFBE00661E92 /* AppleSignInExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleSignInExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +102,15 @@
 		B17B23FA232BBDF400661E92 /* AppleSignInExample */ = {
 			isa = PBXGroup;
 			children = (
+				B17B2432232BBFBE00661E92 /* AppleSignInExample.entitlements */,
+				B17B242F232BBF4000661E92 /* Model */,
 				B17B23FB232BBDF400661E92 /* AppDelegate.swift */,
 				B17B23FD232BBDF400661E92 /* SceneDelegate.swift */,
-				B17B23FF232BBDF400661E92 /* ViewController.swift */,
-				B17B2401232BBDF400661E92 /* Main.storyboard */,
 				B17B2404232BBDF500661E92 /* Assets.xcassets */,
 				B17B2406232BBDF500661E92 /* LaunchScreen.storyboard */,
 				B17B2409232BBDF500661E92 /* Info.plist */,
+				B17B242B232BBE6500661E92 /* AppleSignInViewController.swift */,
+				B17B242D232BBF0800661E92 /* AppleSigninProtocol.swift */,
 			);
 			path = AppleSignInExample;
 			sourceTree = "<group>";
@@ -126,6 +131,14 @@
 				B17B241F232BBDF500661E92 /* Info.plist */,
 			);
 			path = AppleSignInExampleUITests;
+			sourceTree = "<group>";
+		};
+		B17B242F232BBF4000661E92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B17B2430232BBF5200661E92 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +247,6 @@
 			files = (
 				B17B2408232BBDF500661E92 /* LaunchScreen.storyboard in Resources */,
 				B17B2405232BBDF500661E92 /* Assets.xcassets in Resources */,
-				B17B2403232BBDF400661E92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17B2400232BBDF400661E92 /* ViewController.swift in Sources */,
+				B17B242E232BBF0800661E92 /* AppleSigninProtocol.swift in Sources */,
 				B17B23FC232BBDF400661E92 /* AppDelegate.swift in Sources */,
 				B17B23FE232BBDF400661E92 /* SceneDelegate.swift in Sources */,
+				B17B2431232BBF5200661E92 /* User.swift in Sources */,
+				B17B242C232BBE6500661E92 /* AppleSignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +311,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B17B2401232BBDF400661E92 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B17B2402232BBDF400661E92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B17B2406232BBDF500661E92 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppleSignInExample/AppleSignInExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MC85J6Z5Y;
 				INFOPLIST_FILE = AppleSignInExample/Info.plist;
@@ -452,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppleSignInExample/AppleSignInExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MC85J6Z5Y;
 				INFOPLIST_FILE = AppleSignInExample/Info.plist;
