@@ -1,7 +1,7 @@
 # AppleSignInExample
 
 # Resources
-This repository contains an Xcode example project for the blog post at [Sign in With Apple](https://medium.com/).
+This repository contains an Xcode example project for the blog post at [Sign in With Apple](https://medium.com/@yoellev8/sign-in-with-apple-siwa-a80efad0f2ca).
 
 ![Xcode 11.0+](https://img.shields.io/badge/Xcode-11.0%2B-blue.svg)
 ![iOS 13.0+](https://img.shields.io/badge/iOS-13.0%2B-blue.svg)
