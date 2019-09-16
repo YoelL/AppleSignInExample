@@ -1,4 +1,4 @@
-# AppleSignInExample
+# Apple Sign In Example
 
 # Resources
 This repository contains an Xcode example project for the blog post at [Sign in With Apple](https://medium.com/@yoellev8/sign-in-with-apple-siwa-a80efad0f2ca).
